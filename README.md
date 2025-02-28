@@ -5,14 +5,14 @@ This is a **Sentiment Analysis API** built using **FastAPI** and an **LSTM-based
 - **1 → Neutral**
 - **2 → Positive**
 
-The API can be deployed on **Render, AWS, or any cloud platform**.
+The API can be deployed on **Render and Vercel**.
 
 ---
 
 ## 🚀 Features
 ✅ Sentiment prediction for product reviews  
 ✅ Built with **FastAPI + PyTorch (LSTM)**  
-✅ Supports **Docker & Cloud Deployment**  
+✅ Supports **Vercel & Render**  
 ✅ **Pretrained Model** included for quick inference  
 ✅ **CORS enabled** for frontend integration  
 
@@ -47,25 +47,10 @@ cd Sentiment-Analysis-FastAPI
 pip install -r requirements.txt
 ```
 
-### 3️⃣ **Run the API Locally**
-```bash
-uvicorn app:app --host 0.0.0.0 --port 8000 --reload
-```
-> ✅ API will be available at: **http://127.0.0.1:8000**
+
 
 ---
 
-## 💼 API Endpoints
-
-### 🔹 **Predict Sentiment**
-#### **POST `/predict`**
-- **Input:** JSON with a review text  
-- **Output:** Sentiment (`0`, `1`, or `2`)
-
-#### **Example Request**
-```bash
-curl -X POST "http://127.0.0.1:8000/predict" -H "Content-Type: application/json" -d '{"review": "Amazing product, I love it!"}'
-```
 
 #### **Example Response**
 ```json
